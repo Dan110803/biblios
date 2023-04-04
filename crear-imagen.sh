@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t mysqlbiblioteca .
+docker build -t mysql-biblioteca .
