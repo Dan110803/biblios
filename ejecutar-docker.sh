@@ -1,0 +1,1 @@
+docker run -d --name biblio -e MYSQL_ROOT_PASSWORD=secret -e MYSQL_DATABASE=biblioteca -v $(pwd)/aplicación:/aplicación -v $(pwd)/base:/docker-entrypoint-initdb.d mysql:5.7.39
