@@ -71,10 +71,11 @@ CREATE TABLE prestamo (
 CREATE TABLE reserva (
     id_reserva    INTEGER NOT NULL,
     fecha_inicial DATE NOT NULL,
-    fecha_final   DATE NOT NULL
+    fecha_final   DATE NOT NULL,
+    PRIMARY KEY ( id_reserva )
 );
 
-ALTER TABLE reserva ADD CONSTRAINT reserva_pk PRIMARY KEY ( id_reserva );
+
 
 
 CREATE TABLE usuario (
@@ -84,6 +85,6 @@ CREATE TABLE usuario (
     direccion          VARCHAR2(40) NOT NULL,
     plan               VARCHAR2(20) NOT NULL,
     tipo               VARCHAR2(20) NOT NULL,
-    reserva_id_reserva INTEGER NOT NULL
-    PRIMARY KEY(codigo);
+    reserva_id_reserva INTEGER NOT NULL,
+    PRIMARY KEY(codigo)
 );
